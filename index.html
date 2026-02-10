@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mini Minecraft Advanced</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="top">
+  <span id="time">☀ Day</span>
+  <span id="z">Z:0</span>
+</div>
+
+<div id="hotbar"></div>
+
+<canvas id="game" width="400" height="400"></canvas>
+
+<div id="controls">
+  <button onclick="move(0,-1)">⬆</button><br>
+  <button onclick="move(-1,0)">⬅</button>
+  <button onclick="move(1,0)">➡</button><br>
+  <button onclick="move(0,1)">⬇</button><br>
+  <button onclick="up()">⬆Z</button>
+  <button onclick="down()">⬇Z</button><br>
+  <button onclick="switchMode()">Switch Mode</button>
+</div>
+
+<script src="world.js"></script>
+<script src="player.js"></script>
+<script src="inventory.js"></script>
+<script src="animals.js"></script>
+<script src="controls.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
